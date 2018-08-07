@@ -19,6 +19,7 @@ Route::get('/login', function () {
     return view('login.login');
 });
 
+<<<<<<< HEAD
 // Route::post('api/v1/auth' , [ 
 //     'as'    => 'auth',
 //     'uses'  => 'LoginController@login'
@@ -35,3 +36,8 @@ Route::get('queue' , function(){
 });
 
 Route::get('api/v1/queue/{id?}', 'QueueController@index');
+=======
+Route::get('/manage', function () {
+    return view('ManageQueue.ManageQueue');
+});
+>>>>>>> 4780e20fa8b6d0642cf419b86055768ed42512fc
