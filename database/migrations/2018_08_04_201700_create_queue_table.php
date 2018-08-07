@@ -17,13 +17,13 @@ class CreateQueueTable extends Migration
             $table->increments('id');
             $table->integer('queueNum');
             $table->string('name', 100)->charset('utf8')->default(0);
-            $table->unsignedInteger('bed');
+            $table->unsignedInteger('beds');
             $table->dateTime('start');
             $table->dateTime('end');
             $table->unsignedInteger('userId');
 
-            $table->foreign('bed')
-                  ->references('id')->on('bed')
+            $table->foreign('beds')
+                  ->references('id')->on('beds')
                   ->onDelete('cascade');
         });
     }

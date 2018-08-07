@@ -27,6 +27,6 @@ class CreateTableBed extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bed');
+        Schema::dropIfExists('beds');
     }
 }
