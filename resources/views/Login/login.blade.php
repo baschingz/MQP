@@ -7,6 +7,8 @@
             <div id="login-column" class="col-md-6">
                 <div class="login-box col-md-12">
                     <form id="login-form" class="form" action="" method="post">
+                        <input name="_token" type="hidden" id="_token" value="{{ csrf_token() }}" />
+
                         <h3 class="text-center text-info">Login</h3>
                         <div class="form-group">
                             <label for="username" class="text-info">Username:</label><br>
