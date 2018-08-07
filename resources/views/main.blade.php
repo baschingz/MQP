@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}" ng-app="myapp">
+<html lang="{{ app()->getLocale() }}" ng-app="myApp">
     <head>
+        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
     </head>
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,8 +35,9 @@
    <div class="footer">
    <p>Footer</p>
    </div>
-    @yield('JS')
+    
     <script src="{{asset('js/angularJS.js')}}"></script>
+    @yield('JS')
     </body>
    
 </html>
