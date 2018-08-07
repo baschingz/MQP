@@ -18,6 +18,7 @@ class QueueController extends Controller
         } else {
             return $this->show($id);
         }
+        
         return response()->json(['success'=>'Show all queue OR something!!']);
     }
 }

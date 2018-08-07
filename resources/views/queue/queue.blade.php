@@ -1,6 +1,6 @@
 @extends('main')
 @section('body')
-<div>
+<div ng-controller = "queueController">
     <h1>Test!!</h1>
 </div>
 @endsection

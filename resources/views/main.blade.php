@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}" ng-app="myapp">
+<html lang="{{ app()->getLocale() }}" ng-app="myApp">
     <head>
         
         <meta charset="utf-8">
@@ -15,11 +15,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-<<<<<<< HEAD
         <meta name="csrf-token" content="{{ csrf_token() }}" />
-=======
-        
->>>>>>> 4780e20fa8b6d0642cf419b86055768ed42512fc
     </head>
     <body>
     <nav>
@@ -29,8 +25,9 @@
    <div class="footer">
    <p>Footer</p>
    </div>
-    @yield('JS')
+    
     <script src="{{asset('js/angularJS.js')}}"></script>
+    @yield('JS')
     </body>
    
 </html>

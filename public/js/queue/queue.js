@@ -1,10 +1,8 @@
 
 console.log("test1");
 
-var app = angular.module('queueRecords', []) 
-          .constant('API_URL', 'http://localhost:8000/api/v1/');
-
 app.controller('queueController', function($scope, $http, API_URL){
+    console.log("test1");
         $http.get(API_URL + "queue")
              .then(function(response){
                  console.log(response.data); 
