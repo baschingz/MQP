@@ -1,12 +1,11 @@
+app.controller('LoginController',function($scope,$http){
+    
+});
+
 $(function(){
     var username = $('#username');
     var password = $('#password');
-    var req = {
-        method:'POST',
-        Header:'',
-        data:{
-            
-        }
-    }
+    
+    
 
 });
