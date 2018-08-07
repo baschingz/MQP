@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login.login');
 });
+
+Route::get('/manage', function () {
+    return view('ManageQueue.ManageQueue');
+});
