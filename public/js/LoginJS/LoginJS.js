@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-app.controller('LoginController',function($scope,$http){
-    
-});
-
-$(function(){
-    var username = $('#username');
-    var password = $('#password');
-    
-    
-=======
 /*$(function(){
     var username = $('#username');
     var password = $('#password');
@@ -23,7 +12,6 @@ $(function(){
     $("#submit").click(function(){
         console.log("login!!!");   
     })
->>>>>>> b8e3fcde238247231c2d00f51398936a33ac0dd5
 
 });*/
 window.addEventListener("beforeunload", function() { debugger; }, false)
