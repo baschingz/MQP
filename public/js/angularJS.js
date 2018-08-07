@@ -4,3 +4,5 @@ var app = angular.module('myApp', [], function ($interpolateProvider) {
     });
     
 app.constant('API_URL', 'http://localhost:8000/api/v1/');
+ 
+// app.constant('API_URL', 'http://localhost:8000/api/v1/');
