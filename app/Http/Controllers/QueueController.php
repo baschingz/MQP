@@ -19,7 +19,6 @@ class QueueController extends Controller
         } else {
             return $this->show($id);
         }
-
         return response()->json(['success'=>'Show all queue OR something!!']);
     }
 
@@ -27,7 +26,17 @@ class QueueController extends Controller
         return Queue::find($id);
     }
 
+    public function showQueue($id){
+        return Queue::orderBy('id', 'asc')->where('queueNum',$id)->get();
+    }
+
     public function store(Request $request){
+    
+        if (Queue::where('beds', '=', $request->input('bed'))->where('queueNum', '=', $request->input('queue'))->exists()) {
+            return "Beds  or Queue Exists !!!" ; 
+        }else {
+            return "OK" ;
+        }
 
         $queue = new Queue ; 
         $queue->queueNum = $request->input('queue') ;  // increment of new day

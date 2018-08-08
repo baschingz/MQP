@@ -36,7 +36,7 @@ Route::get('queue' , function(){
 
 Route::post('api/v1/queue', 'QueueController@store');
 Route::get('api/v1/queue/{id?}', 'QueueController@index'); // คิวทั้งหมด
-
+Route::get('api/v1/selectQueue/{id}', 'QueueController@showQueue'); // เลือกคิว
 
 Route::get('api/v1/bed/{id?}', 'BedController@index'); // เตียงทั้งหมด
 Route::get('api/v1/bedEnable/{id?}', 'BedController@bedEnable'); // เตียงที่ใช้ได้
