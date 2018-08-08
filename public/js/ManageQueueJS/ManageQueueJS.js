@@ -4,7 +4,7 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
         .then(function(response){
             $scope.beds = response.data ; 
     });
-
+   
     $scope.form=null;
     $scope.sendData = function(form){
        //debugger;

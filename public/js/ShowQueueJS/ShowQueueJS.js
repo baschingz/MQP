@@ -1,8 +1,12 @@
 app.controller('ShowQueue',function($scope,$http,API_URL){
-    $http.get(API_URL + "bedEnable")
-    .then(function(response){
-        $scope.beds = response.data ; 
-});
+$scope.select = function(){
+    var sel = $scope.selection;
+    $http.get(API_URL+"selectQueue/"+sel).then(function(response){
+        $scope.data = response.data;
+    },function(response){
+        alert('alert');
+    });
+}
 
 });
 

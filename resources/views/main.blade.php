@@ -33,9 +33,9 @@
   </div>
 </nav>
     @yield('body')
-   <div class="footer">
+   <!-- <div class="footer">
    <p>Footer</p>
-   </div>
+   </div> -->
     <script src="{{asset('js/angularJS.js')}}"></script>    
     @yield('JS')
     </body>

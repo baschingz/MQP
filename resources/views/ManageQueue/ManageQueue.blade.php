@@ -49,15 +49,16 @@
     </thead>
        <tr ng-repeat="bed in beds">
         <td>เตียงที่ <% bed.id %></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="<% $index+1 %>1"></td>
+        <td id="<% $index+1 %>1"></td>
+        <td id="<% $index+1 %>1"></td>
+        <td id="<% $index+1 %>1"></td>
        </tr>
     </table>
 </div>
     </div>
    </div>
+   <br>
 @endsection
 
 @section('JS')

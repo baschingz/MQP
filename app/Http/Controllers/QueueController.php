@@ -15,7 +15,7 @@ class QueueController extends Controller
 
     public function index($id = null) {
         if($id == null){
-            return Queue::orderBy('id','asc')->whereDate('created_at', Carbon::today())->get();
+            return Queue::orderBy('beds','asc')->whereDate('created_at', Carbon::today())->get();
         } else {
             return $this->show($id);
         }
