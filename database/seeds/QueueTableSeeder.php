@@ -61,6 +61,30 @@ class QueueTableSeeder extends Seeder
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
                 'userId' => 1
+            ],
+            [
+                'queueNum' => 2,
+                'name' => 'a',
+                'beds' => 1,
+                'start' => Carbon::now()->format('Y-m-d H:i:s'),
+                'end' => Carbon::now()->format('Y-m-d H:i:s'),
+                'userId' => 1
+            ],
+            [
+                'queueNum' => 3,
+                'name' => 'a',
+                'beds' => 1,
+                'start' => Carbon::now()->format('Y-m-d H:i:s'),
+                'end' => Carbon::now()->format('Y-m-d H:i:s'),
+                'userId' => 1
+            ],
+            [
+                'queueNum' => 4,
+                'name' => 'a',
+                'beds' => 1,
+                'start' => Carbon::now()->format('Y-m-d H:i:s'),
+                'end' => Carbon::now()->format('Y-m-d H:i:s'),
+                'userId' => 1
             ]
         ]);
     }
