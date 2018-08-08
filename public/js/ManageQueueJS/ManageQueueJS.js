@@ -18,8 +18,8 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
         }
         $http(req)
             .then(function(response){
-                console.log(response.data);
-
+                alert(response.data);
+                location.reload();
             }).catch(function(response){
                 console.log(response.data);
                 alert('This is embarassing. An error has occured. Please check the log for details');
