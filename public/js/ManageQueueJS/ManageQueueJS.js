@@ -26,3 +26,7 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
             });
    }
 });
+
+$(function(){
+
+});
