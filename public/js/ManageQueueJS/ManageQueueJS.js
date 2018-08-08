@@ -5,6 +5,7 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
         .then(function(response){
             $scope.beds = response.data ; 
             size = response.data.length ; 
+            
             $http.get(API_URL + "queueByRow/" + size )
                 .then(function(response){
                     $scope.items = [] ;
@@ -16,14 +17,8 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
                         $scope.items[i].column3 = response.data[i+1][2].name ;
                         $scope.items[i].column4 = response.data[i+1][3].name ; 
                     } 
-                
-                    // $scope.items = [] ;
-                    // $scope.items[0] = {} ; 
-                    // $scope.items[0].column1 = response.data[1][0].name ;
-                    // $scope.items[0].column2 = response.data[1][1].name ;
-                    // $scope.items[0].column3 = response.data[1][2].name ;
-                    // $scope.items[0].column4 = response.data[1][3].name ; 
                 });
+
             
     });
  
