@@ -27,7 +27,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
     <a class="nav-item nav-link"  href= "http://localhost:8000/manage">จัดการคิวของผู้ป่วย</a>
-      <a class="nav-item nav-link" href="#">แสดงคิวของผู้ป่วย</a>
+      <a class="nav-item nav-link" href="http://localhost:8000/show">แสดงคิวของผู้ป่วย</a>
       <a class="nav-item nav-link" href="#">ดูประวัติย้อนหลัง</a>
     </div>
   </div>
