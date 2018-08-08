@@ -11,17 +11,21 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">ชื่อ-นามสกุล</label>
     <div class="col-sm-3">
-      <input type="tesxt" class="form-control" ng-model="form.fullname"  placeholder="ชื่อ-นามสกุล">
+      <input type="text" class="form-control" ng-model="form.name"  placeholder="ชื่อ-นามสกุล">
     </div>
     <div class="col-sm-2">
-    <select  class="form-control" >
+    <select  class="form-control" ng-model="form.bed">
     <option value="" disabled selected hidden>เลือกเตียง</option>
     <option ng-repeat="bed in beds"><% bed.id %></option>
       </select>
     </div>
     <div class="col-sm-2">
-    <select  class="form-control">
+    <select  class="form-control" ng-model="form.queue">
     <option value="" disabled selected hidden>เลือกคิว</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
       </select>
     </div>
     <div class="col-sm-1">

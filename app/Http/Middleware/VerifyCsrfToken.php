@@ -16,6 +16,7 @@ class VerifyCsrfToken extends Middleware
         'api/v1/auth',
         'test',
         'ajaxRequest',
-        'manage'
+        'manage',
+        'api/v1/queue'
     ];
 }
