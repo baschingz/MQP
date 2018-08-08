@@ -26,15 +26,23 @@ Route::get('/login', function () {
 
 Route::post('api/v1/auth', 'LoginController@login') ;
 
-Route::get('ajaxRequest', 'HomeController@ajaxRequest');
+//Route::get('ajaxRequest', 'HomeController@ajaxRequest');
 
-Route::post('ajaxRequest', 'HomeController@ajaxRequestPost');
+//Route::post('ajaxRequest', 'HomeController@ajaxRequestPost');
 
 Route::get('queue' , function(){
     return view('queue.queue');
 });
 
-Route::get('api/v1/queue/{id?}', 'QueueController@index');
+Route::post('api/v1/queue', 'QueueController@store');
+Route::get('api/v1/queue/{id?}', 'QueueController@index'); // คิวทั้งหมด
+
+
+Route::get('api/v1/bed/{id?}', 'BedController@index'); // เตียงทั้งหมด
+Route::get('api/v1/bedEnable/{id?}', 'BedController@bedEnable'); // เตียงที่ใช้ได้
+
 Route::get('/manage', function () {
     return view('ManageQueue.ManageQueue');
 });
+
+//Route::post('/manage', 'BedController@bedEnable'); // เตียงที่ใช้ได้

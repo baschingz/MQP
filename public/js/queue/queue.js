@@ -1,8 +1,6 @@
 
-console.log("test1");
-
 app.controller('queueController', function($scope, $http, API_URL){
-    console.log("test1");
+
         $http.get(API_URL + "queue")
              .then(function(response){
                  console.log(response.data); 

@@ -21,7 +21,8 @@ class CreateQueueTable extends Migration
             $table->dateTime('start');
             $table->dateTime('end');
             $table->unsignedInteger('userId');
-
+            $table->timestamps();
+            
             $table->foreign('beds')
                   ->references('id')->on('beds')
                   ->onDelete('cascade');
