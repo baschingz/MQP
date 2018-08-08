@@ -20,7 +20,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 1,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 1,
@@ -28,7 +30,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 2,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 1,
@@ -36,7 +40,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 3,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 1,
@@ -44,7 +50,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 4,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 1,
@@ -52,7 +60,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 5,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 1,
@@ -60,7 +70,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 6,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 2,
@@ -68,7 +80,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 1,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 3,
@@ -76,7 +90,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 1,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ],
             [
                 'queueNum' => 4,
@@ -84,7 +100,9 @@ class QueueTableSeeder extends Seeder
                 'beds' => 1,
                 'start' => Carbon::now()->format('Y-m-d H:i:s'),
                 'end' => Carbon::now()->format('Y-m-d H:i:s'),
-                'userId' => 1
+                'userId' => 1,
+                'created_at' =>  Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' =>  Carbon::now()->format('Y-m-d H:i:s')
             ]
         ]);
     }

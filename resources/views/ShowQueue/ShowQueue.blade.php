@@ -7,7 +7,7 @@
 <div class="row">
 <div class="col-lg-3 box">
     <div>เตียงที่ </div>
-    <div>ชื่อ : </div>
+    <div></div>
 </div>
 </div>
 </div>
