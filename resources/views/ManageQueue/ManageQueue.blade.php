@@ -14,8 +14,9 @@
       <input type="tesxt" class="form-control" ng-model="form.fullname"  placeholder="ชื่อ-นามสกุล">
     </div>
     <div class="col-sm-2">
-    <select  class="form-control">
+    <select  class="form-control" >
     <option value="" disabled selected hidden>เลือกเตียง</option>
+    <option ng-repeat="bed in beds"><% bed.id %></option>
       </select>
     </div>
     <div class="col-sm-2">
