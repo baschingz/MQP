@@ -22,7 +22,11 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
                 location.reload();
             }).catch(function(response){
                 console.log(response.data);
-                alert('This is embarassing. An error has occured. Please check the log for details');
+                alert('โปรดใส่ข้อมูลให้ครบถ้วน');
             });
    }
+});
+
+$(function(){
+
 });

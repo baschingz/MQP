@@ -19,6 +19,10 @@ Route::get('/login', function () {
     return view('login.login');
 });
 
+Route::get('/show', function () {
+    return view('ShowQueue.ShowQueue');
+});
+
 // Route::post('api/v1/auth' , [ 
 //     'as'    => 'auth',
 //     'uses'  => 'LoginController@login'
@@ -36,7 +40,7 @@ Route::get('queue' , function(){
 
 Route::post('api/v1/queue', 'QueueController@store');
 Route::get('api/v1/queue/{id?}', 'QueueController@index'); // คิวทั้งหมด
-Route::get('api/v1/selectQueue/{id}', 'QueueController@showQueue'); // เลือกคิว
+Route::get('api/v1/selectQueue/{id}', 'QueueController@showQueue'); // เลือกตามคิว(1, 2, 3, 4)
 
 Route::get('api/v1/bed/{id?}', 'BedController@index'); // เตียงทั้งหมด
 Route::get('api/v1/bedEnable/{id?}', 'BedController@bedEnable'); // เตียงที่ใช้ได้

@@ -15,7 +15,7 @@ class QueueController extends Controller
 
     public function index($id = null) {
         if($id == null){
-            return Queue::orderBy('id','asc')->get();
+            return Queue::orderBy('id','asc')->whereDate('created_at', Carbon::today())->get();
         } else {
             return $this->show($id);
         }
@@ -27,15 +27,13 @@ class QueueController extends Controller
     }
 
     public function showQueue($id){
-        return Queue::orderBy('id', 'asc')->where('queueNum',$id)->get();
+        return Queue::orderBy('id', 'asc')->whereDate('created_at', Carbon::today())->where('queueNum',$id)->get();
     }
 
     public function store(Request $request){
     
         if (Queue::where('beds', '=', $request->input('bed'))->where('queueNum', '=', $request->input('queue'))->exists()) {
             return "Beds  or Queue Exists !!!" ; 
-        }else {
-            return "OK" ;
         }
 
         $queue = new Queue ; 
