@@ -30,17 +30,110 @@
   </div>
 </div>
 
+
+
+</div>
+
 <div>
     <table class="table table-bordered">
     <thead>
         <tr>
-            <th></th>  
+            <th>คิว / เตียง</th> 
+            <th>เตียงที่ 1 </th> 
+            <th>เตียงที่ 2 </th> 
+            <th>เตียงที่ 3 </th> 
+            <th>เตียงที่ 4 </th> 
+            <th>เตียงที่ 5 </th> 
+            <th>เตียงที่ 6 </th> 
+            <th>เตียงที่ 7 </th> 
+            <th>เตียงที่ 8 </th> 
+            <th>เตียงที่ 9 </th> 
+            <th>เตียงที่ 10 </th>  
+            <th>เตียงที่ 11 </th> 
+            <th>เตียงที่ 12 </th> 
+            <th>เตียงที่ 13 </th> 
+            <th>เตียงที่ 14 </th> 
+            <th>เตียงที่ 15 </th> 
+            <th>เตียงที่ 16 </th> 
+        </tr>
+        <tr>
+            <td>รอบที่ 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>รอบที่ 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>รอบที่ 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>รอบที่ 4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 </thead>
     </table>
-</div>
-
-
 </div>
 @endsection
 
