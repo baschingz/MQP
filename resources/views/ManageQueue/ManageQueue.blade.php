@@ -47,13 +47,15 @@
             <th>รอบที่ 4 </th> 
         </tr>
     </thead>
-       <tr ng-repeat="bed in beds">
-        <td>เตียงที่ <% bed.id %></td>
-        <td id="<% $index+1 %>1"></td>
-        <td id="<% $index+1 %>1"></td>
-        <td id="<% $index+1 %>1"></td>
-        <td id="<% $index+1 %>1"></td>
+
+       <tr ng-repeat="row in items " >
+        <td>เตียงที่ <% row.id %></td>
+        <td><% row.column1 %> </td>
+        <td><% row.column2 %> </td>
+        <td><% row.column3 %> </td>
+        <td><% row.column4 %> </td>
        </tr>
+
     </table>
 </div>
     </div>

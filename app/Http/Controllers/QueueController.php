@@ -32,7 +32,7 @@ class QueueController extends Controller
 
     public function store(Request $request){
     
-        if (Queue::where('beds', '=', $request->input('bed'))->where('queueNum', '=', $request->input('queue'))->exists()) {
+        if (Queue::where('beds', '=', $request->input('bed'))->whereDate('created_at', Carbon::today())->where('queueNum', '=', $request->input('queue'))->exists()) {
             return "Beds  or Queue Exists !!!" ; 
         }
 
@@ -46,5 +46,40 @@ class QueueController extends Controller
         $queue->save();
 
         return "Queue record successfully queue id : " . $queue->id ; 
+    }
+
+    public function showByRow($size){
+        $new_new_queue = [] ; 
+        for($i = 1 ; $i <= $size ; $i++){
+            $queue = Queue::orderBy('queueNum', 'asc')->where('beds', $i)->whereDate('created_at', Carbon::today())->get();
+            $queue = $this->getSubData($queue);
+            $new_new_queue[$i] = $queue ; 
+        }
+        
+        return $new_new_queue ;
+    }
+
+    function getSubData($queue){
+
+        $new_queue = [] ; 
+        $chk = false   ; 
+
+        for ($i = 0 ; $i < 4 ; $i++){
+            for( $j = 0 ; $j < sizeof($queue) ; $j++){
+
+                if($queue[$j]["queueNum"] == $i+1){
+                    $new_queue[$i] = $queue[$j] ; 
+                    $chk = true ; 
+                }
+            }
+            if($chk){
+    
+            }else {
+                $new_queue[$i] = new Queue ; 
+            }
+
+            $chk = false ; 
+        }
+        return $new_queue ; 
     }
 }
