@@ -20,6 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "composer": "^4.0.0"
+        "composer": "^4.0.0",
+        "php": "0.0.1"
     }
 }
