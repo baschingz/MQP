@@ -37,7 +37,7 @@
 </div>
 </div>
 <div>
-    <table class="table table-bordered">
+    <table class="table table-bordered" >
     <thead>
         <tr>
             <th>คิว / เตียง</th> 
@@ -59,7 +59,11 @@
     </table>
 </div>
     </div>
+    <div  class="right_p">
+   <button type="button" ng-click="save()" class="btn btn-primary right_p">บันทึกข้อมูล</button>
+</div>
    </div>
+  
    <br>
 @endsection
 

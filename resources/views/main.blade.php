@@ -28,7 +28,7 @@
     <div class="navbar-nav">
     <a class="nav-item nav-link"  href= "http://localhost:8000/manage">จัดการคิวของผู้ป่วย</a>
       <a class="nav-item nav-link" target="_blank" href="http://localhost:8000/show">แสดงคิวของผู้ป่วย</a>
-      <a class="nav-item nav-link" href="#">ดูประวัติย้อนหลัง</a>
+      <a class="nav-item nav-link" href="http://localhost:8000/history">ดูประวัติย้อนหลัง</a>
     </div>
   </div>
 </nav>

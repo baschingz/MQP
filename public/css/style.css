@@ -59,3 +59,14 @@
     text-align: center;
     font-size: 30px;
 }
+
+.right_p {
+    text-align: right;
+    margin-right: 2%
+} 
+
+.w30{
+    width: 50%;
+    margin-left: 20%;
+    text-align: center;
+}

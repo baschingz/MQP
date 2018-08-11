@@ -43,6 +43,12 @@ app.controller('ManageQueueController',function($scope,$http,API_URL){
                 alert('โปรดใส่ข้อมูลให้ครบถ้วน');
             });
    }
+  
+
+   $scope.table = null;
+   $scope.save=function(){
+    console.log($scope.items);
+   }
 });
 
 $(function(){

@@ -23,6 +23,10 @@ Route::get('/show', function () {
     return view('ShowQueue.ShowQueue');
 });
 
+Route::get('/history', function () {
+    return view('HistoryQueue.HistoryQueue');
+});
+
 // Route::post('api/v1/auth' , [ 
 //     'as'    => 'auth',
 //     'uses'  => 'LoginController@login'
