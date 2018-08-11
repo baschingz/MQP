@@ -59,7 +59,7 @@ class QueueController extends Controller
         return $new_new_queue ;
     }
 
-    function getSubData($queue){
+    private function getSubData($queue){
 
         $new_queue = [] ; 
         $chk = false   ; 
