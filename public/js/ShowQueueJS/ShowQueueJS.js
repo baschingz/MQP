@@ -1,5 +1,6 @@
 app.controller('ShowQueue',function($scope,$http,API_URL){
-$scope.select = function(){
+
+    $scope.select = function(){
     var sel = $scope.selection;
     $http.get(API_URL+"selectQueue/"+sel).then(function(response){
         $scope.data = response.data;

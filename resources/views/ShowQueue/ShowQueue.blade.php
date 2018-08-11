@@ -22,7 +22,7 @@
 </div>
 <div class="row">
 <div class="col-lg-3 box" ng-repeat="dat in data">
-    <div>เตียงที่ <% dat.id %></div>
+    <div>เตียงที่ <% dat.beds %></div>
     <div><% dat.name %></div>
 </div>
 </div>
