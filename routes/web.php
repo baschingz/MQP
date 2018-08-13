@@ -54,4 +54,6 @@ Route::get('/manage', function () {
     return view('ManageQueue.ManageQueue');
 });
 
+Route::get('api/v1/history', 'HistoryController@index');
+Route::get('api/v1/selectHistory/{date}', 'HistoryController@selectHistory');
 //Route::post('/manage', 'BedController@bedEnable'); // เตียงที่ใช้ได้

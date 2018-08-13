@@ -82,4 +82,5 @@ class QueueController extends Controller
         }
         return $new_queue ; 
     }
+
 }
